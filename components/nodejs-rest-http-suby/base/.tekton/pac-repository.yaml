@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: nodeshift-starters-nodejs-rest-http
+    appstudio.openshift.io/component: nodejs-rest-http-suby
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: nodejs-rest-http-suby
+  namespace: bgriggs-tenant
+spec:
+  url: https://github.com/nodeshift-starters/nodejs-rest-http
